@@ -28,16 +28,8 @@ export class DonaComponent {
   };
 
   ngOnInit() {
-    console.log(this.titulo);
-    console.log(this.doughnutChartLabels);
-    console.log(this.data);
-    console.log(this.doughnutChartData);
     this.doughnutChartData.labels = this.doughnutChartLabels;
     this.doughnutChartData.datasets = [{data: this.data[0]}];
-    
-    
   }
-
-  // public doughnutChartType: ChartType = 'doughnut';
 
 }
