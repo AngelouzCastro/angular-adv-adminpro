@@ -15,7 +15,13 @@ import { PagesComponent } from './pages.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ClientesComponent } from './clientes/clientes.component';
 
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -26,7 +32,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     PagesComponent,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
+    ClientesComponent
   ],
   exports: [
     DashboardComponent,
@@ -40,7 +47,12 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     CommonModule,
     SharedModule,
     RouterModule,
-    ComponentsModule
+    ComponentsModule,
+    MatButtonModule, 
+    MatDividerModule, 
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class PagesModule { }

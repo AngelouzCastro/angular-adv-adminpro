@@ -87,7 +87,9 @@ export class LoginComponent implements AfterViewInit{
           //navegar al Dashbiard
           this.router.navigateByUrl('/');
         }, (err) => {
-          Swal.fire('Error', err.error.msg, 'error');
+          console.log(err);
+          
+          Swal.fire('Error', err, 'error');
         } );
   }
     
